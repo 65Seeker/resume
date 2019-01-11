@@ -26,10 +26,19 @@ ol {
     clear: both;
 }
 
-[data-x].offset{
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+[data-x].offset {
     transform: translateY(150px);
 }
-[data-x]{
+
+[data-x] {
     transform: translateY(0);
     transition: all 0.5s;
 }
@@ -114,7 +123,8 @@ ol {
     border-bottom: 3px solid transparent;
 }
 
-.topNavBar nav>ul>li>a:hover::after,.topNavBar nav>ul>li.highlight>a::after {
+.topNavBar nav>ul>li>a:hover::after,
+.topNavBar nav>ul>li.highlight>a::after {
     content: '';
     display: block;
     position: absolute;
@@ -308,6 +318,7 @@ section.portfolio {
     margin: 60px auto 0;
 }
 
+
 section.skills h2 {
     text-align: center;
     color: #3d4451;
@@ -346,7 +357,7 @@ section.skills h2 {
     transition: all 1.5s;
 }
 
-.skills.offset .progress{
+.skills.offset .progress {
     transform: translateX(-100%);
 }
 
@@ -366,70 +377,35 @@ section.skills h2 {
     font-size: 34px;
     line-height: 1.2;
     font-weight: 600;
+    margin-bottom: 32px;
 }
 
-.portfolio {
+section.portfolio {
     text-align: center;
-}
-
-.portfolio nav {
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.portfolio nav ol {
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 5px;
-    padding-left: 0;
-}
-
-.portfolio nav ol li {
-    float: left;
-    margin-right: 40px;
-    cursor: pointer;
-}
-
-.portfolio ol li:nth-child(3) {
-    margin-right: 0;
-}
-
-nav .bar {
-    background: #ffffff;
-    height: 4px;
-    border-radius: 2px;
     margin-bottom: 100px;
+    max-width: 720px;
 }
 
-.bar-in {
-    background: #e6686a;
-    height: 100%;
-    border-radius: 2px;
-    transition: all 0.5s;
+section.portfolio .swiper-container {
+    width: 700px;
+    height: 525px;
+    margin-bottom: 100px
 }
 
-.bar.state-1 .bar-in {
-    margin-left: 0;
-    width: 22%;
+section.portfolio .swiper-button-prev {
+    background-color: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    right: 100%;
+    left: auto;
 }
 
-.bar.state-2 .bar-in {
-    margin-left: 22%;
-    width: 33%;
-}
-
-.bar.state-3 .bar-in {
-    margin-left: 55%;
-    width: 45%;
-}
-
-.works {
-    position: relative;
-    padding-bottom: 999px
-}
-
-.works .big,
-.works .small {
-    position: absolute;
+section.portfolio .swiper-button-next {
+    background-color: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    left: 100%;
+    right: auto;
 }
