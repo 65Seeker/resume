@@ -24,7 +24,7 @@ ul,ol { list-style: none; }
 /* 为了使整个topNavBar脱离文档流，并解决其带来的不良后果，而添加的div.topNavBar-inner */
 .topNavBar-inner { padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; }
 /* LOGO */
-.topNavBar .logo { color: #E6686A; padding: 6px 0; font-size: 24px; font-family: "Segoe UI Black", "Gill Sans", "PingFang SC"; }
+.topNavBar .logo { color: rgb(81, 78, 124); padding: 6px 0; font-size: 24px; font-family: "Segoe UI Black", "Gill Sans", "PingFang SC"; }
 /* 导航栏 */
 .topNavBar nav { padding: 8px 0 4px 0; }
 .topNavBar nav > ul { display: flex; }
@@ -49,7 +49,7 @@ ul,ol { list-style: none; }
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #E6686A;
+    background-color: rgb(81, 78, 124);
     transition: all 0.2s ease-out;
 }
 .topNavBar ul#menu > li.active > a::after, .topNavBar ul#menu > li.highlight > a::after { width: 100%; }
@@ -77,7 +77,7 @@ ul,ol { list-style: none; }
     left: 0;
     right: 0;
     height: 515px;
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg.png);
     background-position: center center;
     background-size: cover;
 }
@@ -95,18 +95,18 @@ section#about { max-width: 940px; margin: 0px auto; padding-top: 80px; }
     transition: all 0.3s;
     width: 300px;
     height: 360px;
-    background-image: url(../images/avatar.jpg);
+    background-image: url(../images/man.jpg);
     background-position: center center;
     background-size: cover;
     float: left;
     margin: 0 20px;
 }
 .userCard .profile-preword { display: block; margin-bottom: 8px; }
-.userCard .welcome { background-color: #E6686A; color: #fff; display: inline-block; padding: 5px 10px; font-weight: bold; line-height: 20px; position: relative; }
+.userCard .welcome { background-color: rgb(81, 78, 124); color: #fff; display: inline-block; padding: 5px 10px; font-weight: bold; line-height: 20px; position: relative; }
 .userCard .welcome > .triangle{
     display: block;
     position: absolute;
-    border: 4px solid #E6686A;
+    border: 4px solid rgb(81, 78, 124);
     width: 0;
     border-right-color: transparent;
     border-bottom-color: transparent;
@@ -119,7 +119,7 @@ section#about { max-width: 940px; margin: 0px auto; padding-top: 80px; }
 .userCard dl dt, .userCard dl dd{float: left;margin-bottom: 20px;}
 .userCard dl dt { width: 30%; font-weight: bold; }
 .userCard dl dd { width: 70%; color: #bbb; }
-.userCard > footer.media { background-color: #E6686A; text-align: center; }
+.userCard > footer.media { background-color: rgb(81, 78, 124); text-align: center; }
 .userCard > footer.media svg { width: 30px; height: 30px; }
 .userCard > footer.media a{
     display: inline-block;
@@ -182,7 +182,7 @@ section#skills .detail .gogo .gogo_qrcode {
 }
 section#skills .detail .gogo:hover .gogo_qrcode { opacity: 1; transform: scale(1); }
 section#skills .progressBar { height: 5px; background-color: #fae1e1; border-radius: 2px; margin: 4px 0; overflow: hidden; }
-section#skills .progressBar > .progress { height: 100%; background-color: #E6686A; border-radius: 2px; transition: all 0.3s ease-out; }
+section#skills .progressBar > .progress { height: 100%; background-color: rgb(81, 78, 124); border-radius: 2px; transition: all 0.3s ease-out; }
 section#skills.offset .progress { transform: translateX(-200px); }
 /* 作品集 */
 section#portfolio { text-align: center; }
@@ -297,7 +297,8 @@ section#messages > form textarea {
     min-height: 100px;
 }
 section#messages > form input[type=submit] {
-    background: #E6686A;
+    background: rgb(81, 78, 124);
+    color: white;
 }
 
 footer.footer { text-align: center; margin: 20px 0; }

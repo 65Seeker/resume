@@ -2,8 +2,8 @@ window.Model = function (user_defined) {
   let tableName = user_defined.tableName
   return {
     init: function () {
-      let APP_ID = 'cJEG2Dk1CraojDVdtANz144V-gzGzoHsz'
-      let APP_KEY = '3gOhg9eS5JbVpoNL19ASOaAT'
+      let APP_ID = 'yDzTqQta1s6Hx3u2aF8rh3wl-gzGzoHsz'
+      let APP_KEY = 'fWTxEtDNKfoWuVsOidOkxRdP'
       AV.init({ appId: APP_ID, appKey: APP_KEY })
     },
     fetch: function () {
