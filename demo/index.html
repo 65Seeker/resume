@@ -2,195 +2,265 @@
 <html>
 
 <head>
-  <title>单肖巍的个人简历</title>
-  <link rel="stylesheet" href="css/loading.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-  <link rel="stylesheet" href="css/main.css" />
-
+  <title>2019前端开发-单肖巍</title>
+  <!-- 加载动画css文件 -->
+  <link rel="stylesheet" href="css/loading.css">
+  <!-- 主页面css文件 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 作品轮播css文件 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+  <!-- favicon的加载地址及样式 -->
+  <script src="https://at.alicdn.com/t/font_548995_g7ry9wuf3z5jnhfr.js"></script>
+  <script src="https://at.alicdn.com/t/font_809215_6wfk10udb19.js"></script>
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -1.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="siteWelcome" class="site-welcome active">
+  <div id="welcome" class="active">
     <div class="loading"></div>
   </div>
 
-  <div id="topNavBar" class="topNavBar">
-    <div class="topNavBar2 clearfix">
-      <a class="logo" href="#" alt="logo" style="float: left; ">
-        <span class="rs">RS</span><span class="card">card</span>
-      </a>
-      <nav class="menu" style="float: right;">
-        <ul class="clearfix">
-          <li><a href="#siteAbout">关于</a></li>
-          <li>
-            <a href="#siteSkills">技能</a>
-            <ul class="submenu">
-              <li>技能1</li>
-              <li>技能2</li>
-              <li>技能3</li>
-            </ul>
-          <li>
-            <a href="#siteWorks">作品</a>
-            <ul class="submenu">
-              <li>作品1</li>
-              <li>作品2</li>
-              <li>作品3</li>
-            </ul>
-          </li>
-          </li>
-          <li>
-            <a href="#">博客</a>
-            <ul class="submenu">
-              <li>博客1</li>
-              <li>博客2</li>
-              <li>博客3</li>
-            </ul>
-          </li>
-          </li>
-          <li><a href="#">日历</a></li>
-          <li><a href="#">联系方式</a></li>
-          <li><a href="#">其他</a></li>
-        </ul>
-      </nav>
+  <header>
+    <div id="topNavBar" class="topNavBar offset">
+      <div class="topNavBar-inner">
+        <a class="logo" href="#" alt="logo">65Seeker</a>
+        <nav>
+          <!-- BEGIN show-submenu.js 的 view -->
+          <ul id="menu" class="clearfix">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+              <ul class="submenu">
+                <li><a href="https://65seeker.github.io/touch-slider/index.html">轮播</a></li>
+                <li><a href="https://65seeker.github.io/animation-resume/index.html">动态简历</a></li>
+                <li><a href="https://65seeker.github.io/project-cnode/dist/index.html#/">CNODE社区</a></li>
+                <li><a href="https://65seeker.github.io/canvas/index.html">涂鸦画板</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#messages">Messages</a>
+            </li>
+            <li>
+              <a href="https://github.com/65Seeker" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.cnblogs.com/65Seeker/" target="_blank">Blog</a>
+            </li>
+          </ul>
+          <!-- END show-submenu.js 的 view -->
+        </nav>
+        <!-- <div id="nav_thumbnail"></div> -->
+      </div>
     </div>
-  </div>
-  <div class="banner">
-    <div class="mask"></div>
-  </div>
-  <main class="resume">
 
-    <div data-x id="siteAbout" class="card">
-      <div class="pictureAndText clearfix">
-        <div class="picture">
-          <img src="./css/image/avatar.jpg" width="299" height="347" alt="头像">
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
+  </header>
+
+  <div class="content">
+    <section data-x id="about" class="offset">
+      <div class="userCard">
+        <div class="userCard-inner clearfix">
+          <div class="picture"></div>
+          <div class="text clearfix">
+            <div class="profile-preword">
+              <span class="welcome">Hello
+                <span class="triangle"></span>
+              </span>
+            </div>
+            <div class="brief">
+              <h1>单肖巍</h1>
+              <p>前端开发工程师</p>
+            </div>
+            <hr>
+            <dl>
+              <dt>年龄</dt>
+              <dd>23</dd>
+              <dt>性别</dt>
+              <dd>男</dd>
+              <dt>所在城市</dt>
+              <dd>深圳</dd>
+              <dt>邮箱</dt>
+              <dd>marx0@foxmail.com</dd>
+              <dt>手机</dt>
+              <dd>186********</dd>
+            </dl>
+          </div>
         </div>
-        <div class="text">
-          <span class="welcome">Hello
-            <span class="triangle"></span>
-          </span>
-          <h1>单肖巍</h1>
-          <p>前端开发工程师</p>
-          <hr>
-          <dl>
-            <dt>年龄</dt>
-            <dd>23</dd>
-            <dt>所在城市</dt>
-            <dd>深圳</dd>
-            <dt>邮箱</dt>
-            <dd>marx0@foxmail.com</dd>
-            <dt>手机</dt>
-            <dd>13812345678</dd>
-          </dl>
+        <footer class="media">
+          <a href="https://github.com/65Seeker" target="_blank">
+            <svg class="icon" aria-hidden="true" style="width:26px;height:26px;vertical-align: -1.05em;">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          <a href="https://www.cnblogs.com/65Seeker/" target="_blank">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-blog"></use>
+            </svg>
+          </a>
+        </footer>
+      </div>
+
+      <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./2019前端-单肖巍.pdf" target="_blank" download="前端开发-单肖巍">下载 PDF 简历</a>
+      </p>
+    </section>
+
+    <section data-x id="skills" class="offset">
+      <h2>技能</h2>
+      <div class="skills-inner">
+        <ol>
+          <li data-name='HTML'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-html"></use>
+            </svg>
+          </li>
+          <li data-name='CSS'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-css"></use>
+            </svg>
+          </li>
+          <li data-name='JavaScript'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-javascript"></use>
+            </svg>
+          </li>
+          <li data-name='Vue'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-vue"></use>
+            </svg>
+          </li>
+          <li data-name='小程序开发'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-mini-program"></use>
+            </svg>
+          </li>
+          <li data-name='React & React Native'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-react"></use>
+            </svg>
+          </li>
+          <li data-name='jQuery'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jquery"></use>
+            </svg>
+          </li>
+          <!-- <li data-name='Webpack'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-webpack"></use>
+            </svg>
+          </li> -->
+          <li data-name='移动端开发'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-mobile"></use>
+            </svg>
+          </li>
+          <li data-name='Node.js'>
+            <img src="./images/nodejs.png" alt="Node.js">
+          </li>
+          <li data-name='其他'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-more"></use>
+            </svg>
+          </li>
+        </ol>
+        <div class="detail">
+          <h3></h3>
+          <p></p>
         </div>
       </div>
-      <footer class="media">
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-github"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-weibo"></use>
-          </svg>
-        </a>
-      </footer>
-    </div>
-    <p class="downloadResumeWrapper">
-      <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
-    </p>
+    </section>
 
-    <p class="introduction">
-      单肖巍，前端工程师。<br>
-      技能：前端开发，Rails 开发，Node.js 开发
-    </p>
-
-  </main>
-  <section data-x id="siteSkills" class="skills">
-    <h2>技能</h2>
-    <ol class="clearfix">
-      <li>
-        <h3>HTML 5 &amp; CSS 3</h3>
-        <div class="progressBar">
-          <div class="progress"></div>
+    <section data-x id="portfolio" class="offset">
+      <h2>作品集</h2>
+      <div class="works">
+        <div class="row">
+          <div class="item">
+            <a href="https://github.com/65Seeker/touch-slider"><img src="./images/works/slide.gif" alt="不同风格的轮播"></a>
+            <div class="intro-wrapper">
+              <h3>不同风格的轮播</h3> | <a href="https://github.com/65Seeker/canvas">view source</a>
+              <p>使用 jQuery 实现 Loop 模式和缩略图模式两种轮播，适配移动端</p>
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://caijialinxx.github.io/animating-resume/"><img src="./images/works/animating.gif" alt="简历生成器"></a>
+            <div class="intro-wrapper">
+              <h3>简历生成器</h3> | <a href="https://github.com/Caijialinxx/animating-resume/blob/master/main.js">view
+                source</a>
+              <p>使用 Promise 对象实现分段式动态绘制制作 Markdown 简历，使用 ES6 语法</p>
+            </div>
+          </div>
         </div>
-      </li>
-      <li>
-        <h3>Javascript</h3>
-        <div class="progressBar">
-          <div class="progress"></div>
+        <div class="row">
+          <div class="item gogo">
+            <a href="./images/qrcode.png"><img src="./images/qrcode.png" alt="CNODE社区"></a>
+            <div class="intro-wrapper">
+              <h3>1</h3> | <a href="">view source</a>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="item">
+            <a href=""><img src="./images/works/chatroom.png" alt="涂鸦画板"></a>
+            <div class="intro-wrapper">
+              <h3>1</h3> | <a href="">view source</a>
+              <p>2</p>
+            </div>
+          </div>
         </div>
-      </li>
-      <li>
-        <h3>jQuery</h3>
-        <div class="progressBar">
-          <div class="progress"></div>
-        </div>
-      </li>
-      <li>
-        <h3>Vue.js</h3>
-        <div class="progressBar">
-          <div class="progress"></div>
-        </div>
-      </li>
-      <li>
-        <h3>React.js</h3>
-        <div class="progressBar">
-          <div class="progress"></div>
-        </div>
-      </li>
-      <li>
-        <h3>Node.js</h3>
-        <div class="progressBar">
-          <div class="progress"></div>
-        </div>
-      </li>
-    </ol>
-  </section>
-  <section data-x id="siteWorks" class="portfolio">
-    <h2>作品集</h2>
-    <div class="swiper-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <img src="./css/image/work-img/NavWeb.png" class="swiper-slide">
-        <img src="./css/image/work-img/canvas.jpg" class="swiper-slide">
-        <img src="./css/image/work-img/apple-style-slides.jpg" class="swiper-slide">
-        ...
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </section>
-  <section class="message">
-    <h2>留言板</h2>
-    <ol id='messageList'></ol>
-    <form id="postMessageForm">
-      <label for="">姓名</label>
-      <input type="text" name="name">
-      <label for="">留言</label>
-      <input type="text" name="content">
-      <input type="submit" value="提交">
-    </form>
-  </section>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
+    <section data-x id="messages" class="offset">
+      <h2>留言板</h2>
+      <ol>
+      </ol>
+      <form id="postMsgForm">
+        <label>昵称：
+          <input type="text" name="username">
+        </label>
+        <label>留言：
+          <textarea name="content" rows="6"></textarea>
+        </label>
+        <input type="submit" value="发表">
+      </form>
+    </section>
+  </div>
 
-  <script src="./js/loadding.js"></script>
-  <script src="./js/init-swiper.js"></script>
-  <script src="./js/auto-slide-up.js"></script>
-  <script src="./js/sticky-topbar.js"></script>
-  <script src="./js/message.js"></script>
-  <script src="//at.alicdn.com/t/font_926069_ebk2g69pfcr.js"></script>
+  <footer class="footer">
+    Made by 65Seeker
+  </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+<!-- 模块化 -->
+<script src="js/base/View.js"></script>
+<script src="js/base/Model.js"></script>
+<script src="js/base/Controller.js"></script>
+<script src="js/showDetail.js"></script>
+<script src="js/showIntro.js"></script>
+<script src="js/loading.js"></script>
+<script src="js/messagesDB.js"></script>
+<script src="js/scroll_topNavBar_change.js"></script>
+<script src="js/scroll_section_change.js"></script>
+<script src="js/menuHover.js"></script>
+<script src="js/smoothy-slide.js"></script>
+<script src="js/slides.js"></script>
 
 </html>

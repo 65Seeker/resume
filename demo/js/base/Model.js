@@ -1,25 +1,26 @@
-/*
-var model = Model({
-  resourceName: '表名'
-})
-*/
-window.Model = function(options){
-    let resourceName = options.resourceName
-    return {
-      init: function(){
-        var APP_ID = 'TsDnap9SEXjSvGSowP7gXXJC-gzGzoHsz'
-        var APP_KEY = 'rGye31p12mM3wFpNRn9RADu9'
-        AV.init({ appId: APP_ID, appKey: APP_KEY })
-      },
-      fetch: function(){
-        var query = new AV.Query(resourceName);
-        return query.find() // Promise 对象
-      },
-      save: function(object){
-        var X = AV.Object.extend(resourceName);
-        var x = new X();
-        return x.save(object)
-      }
-    }
+window.Model = function (user_defined) {
+  let tableName = user_defined.tableName
+  return {
+    init: function () {
+      let APP_ID = 'cJEG2Dk1CraojDVdtANz144V-gzGzoHsz'
+      let APP_KEY = '3gOhg9eS5JbVpoNL19ASOaAT'
+      AV.init({ appId: APP_ID, appKey: APP_KEY })
+    },
+    fetch: function () {
+      let messagesQuery = new AV.Query(tableName)
+      return messagesQuery.find()
+    },
+    add: function (datasObj) {
+      let MessagesDB = AV.Object.extend(tableName)
+      let message = new MessagesDB()
+      let datas = {}
+      datasObj.map((data) => {
+        datas[data.key] = data.value
+        return datas
+      })
+      return message.save(datas)
+    },
+    // delete: function () { },
+    // update: function () { }
   }
-  
+}
